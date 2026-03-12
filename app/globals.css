@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #020617;
+  --foreground: #f1f5f9;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-[var(--background)] text-[var(--foreground)] antialiased;
+}
