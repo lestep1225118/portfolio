@@ -3,25 +3,17 @@ export default function AboutPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
       <h1 className="text-3xl font-bold text-slate-100 mb-6">About</h1>
 
-      <div className="prose prose-invert prose-slate max-w-none">
-        <p className="text-slate-400 leading-relaxed mb-6">
-          I build web applications and explore the intersection of music, computer
-          vision, and machine learning. From harmonic matching for DJ sets to
-          emotion-driven playlists and genre classification from MIDI, I like
-          shipping practical tools and experimenting with ML.
-        </p>
+      <p className="text-slate-400 leading-relaxed mb-8">
+        I work on web apps and side projects around music and ML — harmonic matching for playlists, emotion-to-playlist from photos, and MIDI genre classification. Mostly React/Node and Python.
+      </p>
 
-        <h2 className="text-xl font-semibold text-slate-200 mt-8 mb-4">
-          Skills & tools
-        </h2>
-        <ul className="text-slate-400 space-y-2 list-disc list-inside">
-          <li>Frontend: React, Next.js, TypeScript, Tailwind CSS, Vite</li>
-          <li>Backend: Node.js, Express, Python, Flask</li>
-          <li>Data & ML: Python, TensorFlow/Keras, OpenCV, DeepFace</li>
-          <li>APIs & services: Spotify API, Google Cloud (Speech, etc.)</li>
-          <li>Databases: MongoDB, SQL</li>
-        </ul>
-      </div>
+      <h2 className="text-lg font-semibold text-slate-300 mb-3">Tech</h2>
+      <ul className="text-slate-400 space-y-1.5 list-disc list-inside text-sm">
+        <li>React, Next.js, TypeScript, Tailwind, Vite</li>
+        <li>Node, Express, Python, Flask</li>
+        <li>TensorFlow/Keras, OpenCV, DeepFace</li>
+        <li>Spotify API, Google Cloud, MongoDB</li>
+      </ul>
     </div>
   );
 }
