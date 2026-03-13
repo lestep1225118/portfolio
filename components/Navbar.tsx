@@ -16,11 +16,11 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+    <header className="sticky top-0 z-50 pt-4 px-4 sm:px-6 pb-0">
+      <div className="max-w-2xl mx-auto rounded-2xl border border-slate-700/60 bg-slate-900/80 backdrop-blur-sm shadow-lg shadow-black/20 px-4 py-2.5 flex items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-0 hover:opacity-90 transition-opacity"
+          className="flex items-center gap-0 hover:opacity-90 transition-opacity shrink-0"
           aria-label="Home"
         >
           <img
@@ -28,13 +28,13 @@ export default function Navbar() {
             alt="LS"
             width={40}
             height={40}
-            className="h-9 w-auto object-contain"
+            className="h-8 w-auto object-contain"
           />
         </Link>
 
         <button
           type="button"
-          className="md:hidden p-2 text-slate-400 hover:text-slate-200"
+          className="md:hidden p-2 -mr-2 text-slate-400 hover:text-slate-200 rounded-lg"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-expanded={mobileOpen}
           aria-label="Toggle menu"
@@ -64,18 +64,20 @@ export default function Navbar() {
         </button>
 
         <nav
-          className={`absolute top-full left-0 right-0 md:static border-b md:border-0 border-slate-800 bg-slate-950 md:bg-transparent ${
-            mobileOpen ? "block" : "hidden md:flex"
+          className={`absolute top-full left-4 right-4 mt-2 md:static md:mt-0 rounded-2xl border border-slate-700/60 bg-slate-900/95 backdrop-blur-sm md:border-0 md:bg-transparent md:rounded-none ${
+            mobileOpen ? "block" : "hidden md:block"
           }`}
         >
-          <ul className="flex flex-col md:flex-row md:gap-6 py-4 md:py-0 px-4 md:px-0">
+          <ul className="flex flex-col md:flex-row md:gap-1 py-3 md:py-0 px-3 md:px-0 md:gap-0">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
                 <Link
                   href={href}
                   onClick={() => setMobileOpen(false)}
-                  className={`block py-2 md:py-0 text-slate-400 hover:text-slate-100 transition-colors ${
-                    pathname === href ? "text-slate-100 font-medium" : ""
+                  className={`block py-2.5 px-4 md:py-2 md:px-3 rounded-xl text-sm font-medium transition-colors ${
+                    pathname === href
+                      ? "text-slate-100 bg-slate-800/80 md:bg-slate-800/60"
+                      : "text-slate-400 hover:text-slate-100 hover:bg-slate-800/40"
                   }`}
                 >
                   {label}
