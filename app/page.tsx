@@ -6,9 +6,12 @@ export default function Home() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
       <section className="text-center mb-16 sm:mb-20">
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-100 mb-8">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-100 mb-3">
           Leander Stephen
         </h1>
+        <p className="text-slate-500 text-lg max-w-2xl mx-auto mb-8">
+          3rd-year B.S. in Computer Science — ML, music tech, and low-level: researching ISAs and building a compiled language.
+        </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Link
             href="/projects"
