@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -24,13 +23,12 @@ export default function Navbar() {
           className="flex items-center gap-0 hover:opacity-90 transition-opacity"
           aria-label="Home"
         >
-          <Image
+          <img
             src="/logo.png"
-            alt=""
+            alt="LS"
             width={40}
             height={40}
             className="h-9 w-auto object-contain"
-            priority
           />
         </Link>
 
