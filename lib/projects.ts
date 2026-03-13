@@ -9,7 +9,7 @@ export const projects: Project[] = [
     longDescription:
       "Mumble lets you export a playlist via Exportify, drop the CSV, and filter by same key, relative key, or parallel key with adjustable BPM tolerance. Built with React and Vite.",
     githubUrl: "https://github.com/lestep1225118/Mumble",
-    liveUrl: "https://mumble-six.vercel.app",
+    liveUrl: "https://mumble-delta.vercel.app",
     techStack: ["React", "Vite", "JavaScript"],
     highlighted: true,
     category: "web",
