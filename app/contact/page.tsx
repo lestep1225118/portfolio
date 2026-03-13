@@ -10,6 +10,14 @@ export default function ContactPage() {
       <ul className="space-y-4">
         <li>
           <a
+            href="tel:+14047400683"
+            className="text-teal-400 hover:text-teal-300 font-medium"
+          >
+            (404) 740-0683
+          </a>
+        </li>
+        <li>
+          <a
             href="mailto:lestepbusiness@gmail.com"
             className="text-teal-400 hover:text-teal-300 font-medium"
           >
