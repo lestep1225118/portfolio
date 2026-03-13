@@ -10,7 +10,10 @@ export default function AboutPage() {
       <h2 className="text-lg font-semibold text-slate-300 mb-3">Experience</h2>
       <ul className="text-slate-400 space-y-4 mb-8 text-sm">
         <li>
-          <span className="font-medium text-slate-200">Software Developer Intern, Bravura Technologies</span> (Roswell, GA) — June 2025–Aug 2025, May 2024–Aug 2024. Built an automated email-matching system with HubSpot and Hunter.io; built AI-powered web scraping for 600+ trade show events; produced an AI PDF-to-SVG floorplan system that cut manual layout time by ~90%; worked with Prof. Vasant Dhar to move research models into production prototypes.
+          <span className="font-medium text-slate-200">Software Developer Intern, Bravura Technologies</span> (Roswell, GA) — June 2025–Aug 2025. Built an automated email-matching system integrating HubSpot CRM with Hunter.io; built an AI-powered web scraping pipeline (Python, BeautifulSoup/Selenium) for 600+ US trade show events, aggregating 1,000+ leads and cutting manual research time by ~70%.
+        </li>
+        <li>
+          <span className="font-medium text-slate-200">Software Developer Intern, Bravura Technologies</span> (Roswell, GA) — May 2024–Aug 2024. Produced an AI-based PDF-to-SVG floorplan processing system that detected booth boundaries and labels, cutting manual layout time by ~90%; collaborated with Prof. Vasant Dhar and cross-functional teams to turn research AI models into production-ready prototypes.
         </li>
         <li>
           <span className="font-medium text-slate-200">Student Researcher, UGA CURO</span> (Athens, GA) — June 2025–Present. Performance analysis of deep-learning models for child vocalization detection on naturalistic audio; extending Python training and evaluation pipelines, hyperparameter tuning, and benchmarking against human-labeled data.
