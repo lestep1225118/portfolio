@@ -10,7 +10,7 @@ export default function Home() {
           Leander Stephen
         </h1>
         <p className="text-slate-500 text-lg max-w-2xl mx-auto mb-8">
-          3rd-year B.S. in Computer Science — ML, music tech, and low-level: researching ISAs and building a compiled language.
+          3rd-year B.S. in Computer Science — ML and music tech.
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Link
