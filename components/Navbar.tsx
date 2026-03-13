@@ -14,22 +14,28 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 pt-4 px-4 sm:px-6 pb-0">
       <div className="max-w-2xl mx-auto rounded-2xl border border-slate-700/60 bg-slate-900/80 backdrop-blur-sm shadow-lg shadow-black/20 px-4 py-2.5 flex items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-0 hover:opacity-90 transition-opacity shrink-0"
+          className="flex items-center gap-0 hover:opacity-90 transition-opacity shrink-0 min-w-[2rem] min-h-[2rem] items-center justify-center"
           aria-label="Home"
         >
-          <img
-            src="/logo.png"
-            alt="LS"
-            width={40}
-            height={40}
-            className="h-8 w-auto object-contain"
-          />
+          {logoError ? (
+            <span className="text-slate-100 font-semibold text-lg tracking-tight">LS</span>
+          ) : (
+            <img
+              src="/logo.png"
+              alt="LS"
+              width={40}
+              height={40}
+              className="h-8 w-auto object-contain"
+              onError={() => setLogoError(true)}
+            />
+          )}
         </Link>
 
         <button
