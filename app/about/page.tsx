@@ -4,7 +4,7 @@ export default function AboutPage() {
       <h1 className="text-3xl font-bold text-slate-100 mb-6">About</h1>
 
       <p className="text-slate-400 leading-relaxed mb-6">
-        I’m a third-year Computer Science student at the University of Georgia (Franklin College of Arts & Sciences), graduating December 2026. I focus on full-stack development, machine learning, and turning research into production-ready tools — from harmonic playlist matching and emotion-to-playlist apps to RNN-based genre classification and child vocalization detection.
+        I’m a fourth-year Computer Science student at the University of Georgia (Franklin College of Arts & Sciences), graduating December 2026. I focus on full-stack development, machine learning, and turning research into production-ready tools — from harmonic playlist matching and emotion-to-playlist apps to RNN-based genre classification and child vocalization detection.
       </p>
 
       <h2 className="text-lg font-semibold text-slate-300 mb-3">Experience</h2>

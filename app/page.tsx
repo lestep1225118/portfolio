@@ -11,7 +11,7 @@ export default function Home() {
             Leander Stephen
           </h1>
           <p className="text-slate-500 text-lg mb-8">
-            3rd-year B.S. in Computer Science — passionate about ML and music tech.
+            4th-year B.S. in Computer Science — passionate about ML and music tech.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
